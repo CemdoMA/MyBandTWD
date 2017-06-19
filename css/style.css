@@ -1,0 +1,478 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+}
+
+#wrapper{
+    width: 75%;
+    height: 100%;
+    background-color: black;
+    margin: 0 auto;
+    padding: 0;
+
+
+}
+.HeadPhotos{
+    position: relative;
+    
+}
+#HeadPhoto{
+    width: 100%;
+    padding-bottom: 30px;
+}
+#HeadLogo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33,50%;
+}
+/*----------------------NAVBAR----------------------*/
+#nav{
+    margin: 0% 0% 1.7% 12.5%;
+    overflow: hidden;
+    background-color: none;
+    position: absolute;
+    bottom:0;
+    width: 75%;
+    
+}
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    float: left;
+    font-size: 20px;
+    font-family: Montserrat,sans-serif;
+	padding: 0 10px 0 10px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 5px solid transparent;
+}
+
+li a:hover{
+    border-bottom: 5px solid white;
+}
+h1{
+	font-family: Roboto;
+	color: white;
+}
+
+/*----------------------FOTOS----------------------*/
+
+.Imagegalary{
+	width: 21.25%;
+	height: auto;
+	position: relative;
+	padding-bottom: 35px;
+	float: left;
+}
+
+.Imagegalary:last-child::after{
+	content:"";
+	clear: both;
+}
+.Imagegalary_img:hover{
+	transition: all 0.5s ;
+	box-shadow: inset 0 0 100px #222;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.05);
+}
+.Imagegalary_img:not(:hover){
+	transition: all 0.5s ;
+	box-shadow: inset 0 0 50px black;
+}
+.Imagegalary_img{
+	background-repeat: no-repeat;
+	height: 521px;
+	width: 100%;
+	background-size: cover;
+	box-shadow: inset 0 0 50px black;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	background-position: center;
+
+}
+#left{
+	padding: 0 2.5% 0 5%;
+}
+#right{
+	padding: 0 5% 0 2.5%;
+}
+
+
+/*----------------------BERICHTEN----------------------*/
+#berichtenAll{
+    border-top: 1px solid white;
+    color: white;
+    padding: 20px;
+}
+.textFoto1{
+    float: left;
+    padding: 0px 10px;
+    max-width: 300px;
+    }
+.textBericht p{
+    font-family: Abel;
+}
+
+
+.textBuiten1{
+    text-align: left;
+     background: #292c2f; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, #292c2f , black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #292c2f, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #292c2f, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #292c2f , black); /* Standard syntax (must be last) */
+    border-radius: 7px;
+    padding: 2px;
+    height: 270px;
+    margin-bottom: 20px;
+    border-style: outset;
+    border-color: #b30000;
+    
+}
+.footerIcons{
+    font-size: 10px;
+}
+.links{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #b30000;
+}
+.links strong{
+    color: gold;
+}
+
+.links:hover{
+    border-color: antiquewhite;
+    color: wheat;
+}
+.title{
+    width: 80%;
+}
+.datum{
+    float: right;
+	padding-right: 10px;
+}
+/*----------------------INFORMATIE PAGE----------------------*/
+
+#InfoBuiten
+{
+	color: white;
+	font-family: Roboto;
+	font-size: 20px;
+	line-height: 1.5;
+	width: 100%;
+	height: 550px;
+}
+h1{
+	text-align: left;
+	margin-top: 0;
+}
+iframe{
+	float: left;
+	padding-bottom: 40px;
+
+}
+
+.vid2{
+	text-align: center;
+}
+.vid3{
+	padding: 0px 23px;
+}
+
+.textInformation{
+	margin-left: 600px;
+	text-align: left;
+}
+
+/*----------------------EPISODES----------------------*/
+
+.postImg{
+	width: 100%;
+	position: relative;
+	padding-bottom: 35px;
+}
+.post_img:hover{
+	transition: all 0.5s ;
+	box-shadow: inset 0 0 100px #222;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.05);
+}
+.post_img:not(:hover){
+	transition: all 0.5s ;
+	box-shadow: inset 0 0 50px black;
+}
+.post_img{
+	background-repeat: no-repeat;
+	height: 521px;
+	width: 100%;
+	background-size: cover;
+	box-shadow: inset 0 0 50px black;
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.postImg>.textOver{
+	position: absolute;
+	color: white;
+	text-align: left;
+	left: 20px;
+	bottom: 30px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: Muli;
+
+}
+
+.postImg>.textOverDate{
+	position: absolute;
+	color: white;
+	text-align: right;
+	right: 20px;
+	bottom: 30px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: Muli;
+
+}
+.episodeAll{
+	font-size: 20px;
+}
+.epiTitle{
+	color: white;
+	font-family: Roboto;
+
+}
+
+
+/*----------------------PAGINATION----------------------*/
+
+#pagechanger{
+	text-align: left;
+	color: white;
+}
+#pagenumber{
+	color: white;
+}
+
+/*----------------------FOOTER----------------------*/
+#footerLogo{
+    width: 300px;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+
+	padding: 50px 60px 40px;
+	margin-top: 90px;
+	overflow: hidden;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-left{
+	float: left;
+    text-align: center;
+}
+
+/* Logo  */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Bowlby+One';
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color: #cc0000;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Rechts */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/*  contact  */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* Responsive gedeelte */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
