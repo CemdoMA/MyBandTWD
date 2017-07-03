@@ -19,12 +19,6 @@ isset($_GET['url']) ? $action = $_GET['url'] : $action = 'home';
 
 switch ($action) {
     case 'home':
-//        $templateParser->assign('results_per_page',$results_per_page);
-//        include 'model/getpagination.php';
-//        $templateParser->assign('page',$page);
-//        include 'model/getdata.php';
-//        $templateParser->assign('number_of_pages', $number_of_pages);
-//        $templateParser->assign('result',$result);
         require_once 'model/getarticles.php';
         $templateParser->assign('result_list', $result_list);
         $templateParser->display('home.tpl');
