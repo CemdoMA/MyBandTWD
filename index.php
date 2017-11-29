@@ -21,6 +21,12 @@ switch ($action) {
     case 'home':
         require_once 'model/getarticles.php';
         $templateParser->assign('result_list', $result_list);
+        include 'model/getpagination.php';
+        $templateParser->assign('page', $page);
+        $templateParser->assign('number_of_pages', $result);
+        include 'model/getdata.php';
+        $templateParser->assign('article_list', $result);
+
         $templateParser->display('home.tpl');
 
         break;

@@ -48,22 +48,22 @@
 
     </div>
 
-    {*<p id="pagenumber">Page {$page}</p>*}
-    {*<table id="pagechanger">*}
-        {*<tr>*}
-            {*<td id="left">*}
-                {*{if $page gt 1}*}
-                    {*<a href="?url=home&page={$page-1}">Previous</a>*}
-                {*{/if}*}
-            {*</td>*}
-            {*<td id="right">*}
-                {*{if $page lt $number_of_pages}*}
-                    {*<a href="?url=home&page={$page+1}">Next</a>*}
-                {*{/if}*}
+    <p id="pagenumber">Page {$page}</p>
+    <table id="pagechanger">
+        <tr>
+            <td id="left">
+                {if $page gt 1}
+                    <a href="?url=home&page={$page-1}">Previous</a>
+                {/if}
+            </td>
+            <td id="right">
+                {if $page lt $number_of_pages}
+                    <a href="?url=home&page={$page+1}">Next</a>
+                {/if}
 
-            {*</td>*}
-        {*</tr>*}
-    {*</table>*}
+            </td>
+        </tr>
+    </table>
 
 </div>
 
